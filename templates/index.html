@@ -14,7 +14,7 @@
     <!-- Chart.js CDN for the GC bar chart -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
 
-    <link rel="stylesheet" href="/static/css/style.css" />
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
     <!-- ── HEADER ─────────────────────────────────────────── -->
@@ -124,6 +124,6 @@
         <p>DNA Bioinformatics Analyzer · Built with Flask &amp; BioPython · Data from <a href="https://www.ncbi.nlm.nih.gov/" target="_blank" rel="noopener">NCBI</a></p>
     </footer>
 
-    <script src="/static/js/app.js"></script>
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
 </body>
 </html>
