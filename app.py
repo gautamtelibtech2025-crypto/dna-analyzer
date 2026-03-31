@@ -59,7 +59,4 @@ def api_analyze():
 
 
 if __name__ == "__main__":
-    # Run in debug mode for local development
-    print("\n[DNA Bioinformatics Analyzer] Server is running!")
-    print("  Open http://127.0.0.1:5000 in your browser.\n")
-    app.run(debug=True, port=5000)
+    app.run(host="0.0.0.0", port=10000)
